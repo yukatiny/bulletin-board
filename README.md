@@ -46,25 +46,6 @@ mysql> SOURCE create_db.sql
 3. 
 
 
-
-## 使ったコマンドの記載
- 
- コマンドの説明
- 
-```bash
-pip install huga_package
-```
- 
-## あああああ
- 
-あああああああ
- 
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
- 
 # Note
  
 注意点などがあれば書く
