@@ -9,9 +9,9 @@ UbuntuでPython3とMySQLデータベースを使い、ひとこと掲示板を�
 作成者の使用環境はこちらです。
 
 ```bash
-* Ubuntu20.04
-* Python3.8.5
-* MySQL Community Server 8.0.22
+・Ubuntu20.04
+・Python3.8.5
+・MySQL Community Server 8.0.22
 ```
 
 ## 準備
