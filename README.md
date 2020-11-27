@@ -2,9 +2,9 @@
 
 <img width="168" alt="readme_pic" src="https://user-images.githubusercontent.com/75052592/100316830-a1f02280-2ffe-11eb-8d7c-918012d12d1c.png">
 
-UbuntuでPython3とMySQLデータベースを使い、ひとこと掲示板を作りました。投稿されたものは掲示板の下部に表示されていき、記録として残るようになっています。作成手順は以下の通りです。
+UbuntuでPython3とMySQLデータベースを使い、ひとこと掲示板を作りました。「なまえ」と「本文」を入力し、「投稿」のボタンを押すと入力内容が投稿されます。投稿されたものは掲示板の下部に表示されていき、記録として残るようになっています。作成手順は以下の通りです。
 
-## 環境
+## Requirement/環境
 
 今回のひとこと掲示板作成にあたり、作成者の使用環境はこちらです。
 
@@ -16,9 +16,8 @@ UbuntuでPython3とMySQLデータベースを使い、ひとこと掲示板を�
 
 ## 準備
 
-掲示板を作成する前に準備しておくことが2つあります。
-
 * Apache2でCGIを有効化する
+
 * ホームディレクトリ配下に「public_html」ディレクトリを作成する
 
 ## pythonスクリプト作成
@@ -43,15 +42,31 @@ UbuntuでPython3とMySQLデータベースを使い、ひとこと掲示板を�
 mysql> SOURCE create_db.sql
 ```
 
-3. 
+これで投稿された内容がデータベースに保存され、掲示板ページの下部に記録として残るようになります。
 
+## 「.env」ファイル作成
 
-# Note
- 
-注意点などがあれば書く
- 
-## 作成者
+ファイル作成の前に、python-dotenvをインストールします。
+
+```bash
+$ pip3 install python-dotenv
+```
+
+「public_html」配下に「.env」ファイルを作成し、以下の内容を記述します。
+
+```bash
+bbs_db_host="ホスト名"
+bbs_db_user="ユーザ名"
+bbs_db_pass="パスワード"
+bbs_db_name="db名"
+```
+
+これで「ひとこと掲示板」の完成です。
+
+## Author/作成者
  
 yukatiny
- 
-## License
+
+## License/ライセンス
+
+This is under MIT license (https://en.wikipedia.org/wiki/MIT_License).
