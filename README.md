@@ -4,9 +4,9 @@
 
 UbuntuでPython3とMySQLデータベースを使い、ひとこと掲示板を作りました。「なまえ」と「本文」を入力し、「投稿」のボタンを押すと入力内容が投稿されます。投稿されたものは掲示板の下部に表示されていき、記録として残るようになっています。作成手順は以下の通りです。
 
-## Requirement/環境
+## 環境
 
-今回のひとこと掲示板作成にあたり、作成者の使用環境はこちらです。
+作成者の使用環境はこちらです。
 
 ```bash
 * Ubuntu20.04
@@ -22,7 +22,7 @@ UbuntuでPython3とMySQLデータベースを使い、ひとこと掲示板を�
 
 ## pythonスクリプト作成
 
-「public_html」ディレクトリにPythonスクリプトを作成・保存します。
+「public_html」ディレクトリにPython3スクリプトを作成・保存します。
 
 リポジトリにある「bbs.py」をそのままコピー・保存で大丈夫です。
 
@@ -63,10 +63,10 @@ bbs_db_name="db名"
 
 これで「ひとこと掲示板」の完成です。
 
-## Author/作成者
+## 作成者
  
 yukatiny
 
-## License/ライセンス
+## ライセンス
 
 This is under MIT license (https://en.wikipedia.org/wiki/MIT_License).
