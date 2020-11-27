@@ -18,6 +18,14 @@ UbuntuでPython3とMySQLデータベースを使い、ひとこと掲示板を�
 
 * Apache2でCGIを有効化する
 
+```bash
+# a2enmod cgid
+```
+
+```bash
+# systemctl restart apache2
+```
+
 * ホームディレクトリ配下に「public_html」ディレクトリを作成する
 
 ## pythonスクリプト作成
